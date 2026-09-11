@@ -21,8 +21,7 @@ Thumbs.db
 report_page_*.png
 .releases_catalog.json
 
-# Local quarantine & revision prompt (not committed)
-deprecated/
+# Local revision prompt (not committed)
 AGENT_PROMPT_capitol_hill_revision.md
 
 # Temporary StatCan download archives
