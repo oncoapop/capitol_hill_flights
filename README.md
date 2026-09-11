@@ -1,134 +1,130 @@
-# Aircraft Overflight of Capitol Hill, Burnaby
-### An independent measurement study using open ADS-B records, January 2025 – August 2026
+# Aircraft Overflight Census of Capitol Hill, Burnaby (v2.0 Revision)
+### An independent empirical study using open crowdsourced ADS-B records, January 2025 – August 2026
 
 **Author:** Damian Yap, PhD  
-**Location:** Capitol Hill, Burnaby, British Columbia (49.2869° N, 122.9853° W)  
-**Study Period:** 1 January 2025 – 31 August 2026 (608 calendar days; 573 with usable archive coverage)  
-**Records Analyzed:** 20,093 aircraft-days across 2,050 unique aircraft  
-**Full Report:** [`Capitol_Hill_Overflight_Independent_Study_2025-2026.pdf`](./Capitol_Hill_Overflight_Independent_Study_2025-2026.pdf)
+**Location:** Capitol Hill, Burnaby, British Columbia (49.2869° N, 122.9853° W; summit elevation 115 m ASL; 17.8 km ENE of YVR)  
+**Study Period:** 1 January 2025 – 31 August 2026 (608 calendar days; 573 operational days with usable archive coverage)  
+**Records Analyzed:** 20,093 aircraft-days (2,050 unique ICAO airframes); 24,190 reconstructed discrete passes  
+**Target Journal:** *Journal of Open Aviation Science* (JOAS)  
+**Academic Manuscript:** [`Capitol_Hill_Overflight_Manuscript_v2.docx`](./Capitol_Hill_Overflight_Manuscript_v2.docx)  
+**Change Log & Audit:** [`CHANGELOG.md`](./CHANGELOG.md) | [`reference_audit.md`](./reference_audit.md) | [`open_questions.md`](./open_questions.md)
 
 ---
 
 ## Executive Summary
 
-On **27 November 2025**, aircraft overflights above Capitol Hill in Burnaby, BC underwent an abrupt, permanent step-change:
+On **27 November 2025** (AIRAC cycle 2513), aircraft overflights above Capitol Hill in Burnaby, BC underwent an abrupt, permanent operational restructuring following NAV CANADA's implementation of the **Vancouver Airspace Modernization Project (VAMP)** for Vancouver International Airport (YVR):
 
-* **Arriving Commercial Traffic:** Commercial airliner passes within 500 m of the Capitol Hill summit surged from **2.21 per day** to **13.34 per day** (a **6.04× increase**), reaching **22.0 per day** by August 2026.
-* **Lower and Closer:** When arriving aircraft pass the summit, their median altitude dropped from **7,675 ft to 5,338 ft** (2,337 ft lower), and their median straight-line distance decreased from **2.26 km to 1.52 km** (0.74 km closer).
-* **AIRAC Date Alignment:** The changepoint aligns with ICAO AIRAC cycle 2513 (27 November 2025), the exact date NAV CANADA implemented new arrival procedures under the **Vancouver Airspace Modernization Project (VAMP)**.
-* **Airspace Change vs. Data Artifact (Negative Control):** Traffic categories left untouched by VAMP (floatplanes, helicopters, and commercial traffic at or above 10,000 ft) showed **no increase** (rate ratio 0.97× and 0.90×, not significant). This negative control confirms the surge is a genuine routing alteration, not an artifact of receiver network growth.
-
----
-
-## Headline Measurements
-
-| Measurement | Before (1 Jan – 26 Nov 2025) | After (27 Nov 2025 – 31 Aug 2026) | Change (95% CI) |
-| :--- | :---: | :---: | :---: |
-| **Arriving commercial aircraft within 500 m** | 2.21 / day | 13.34 / day | **6.04×** (5.24–7.03) |
-| **All arriving commercial aircraft within 1.5 km** | 6.17 / day | 43.37 / day | **7.03×** (6.40–7.76) |
-| **Business & private jets within 1.5 km** | 1.62 / day | 4.02 / day | **2.47×** (2.17–2.83) |
-| **All aircraft within 1.5 km** | 17.48 / day | 56.84 / day | **3.25×** (3.03–3.49) |
-| **Control: Light aircraft, floatplanes, helicopters** | 8.53 / day | 8.23 / day | 0.97× (0.85–1.10) *n.s.* |
-| **Control: Commercial traffic at 10,000+ ft** | 0.49 / day | 0.44 / day | 0.90× (0.69–1.17) *n.s.* |
-| **Typical height of arrival within 500 m** | 7,675 ft | 5,338 ft | **2,337 ft lower** |
-| **Typical straight-line distance from summit** | 2.26 km | 1.52 km | **0.74 km closer** |
-
-*Rate ratios are post/pre means of daily counts with 95% bootstrap confidence intervals (4,000 resamples).*
+* **Surge in Overhead Arrivals:** Commercial passenger airliner passes within the 500 m summit core increased **6.73-fold** from **2.23 per day** to **15.03 per day** (95% CI: 5.85–7.81; p = 1.03e-54). Across the broader 1.5 km study circle, commercial arrivals rose **7.87-fold** from **6.57 to 51.71 passes per day** (p = 2.23e-93).
+* **Lower and Closer:** Arriving commercial aircraft within 500 m of the summit descended **~2,400 ft lower** (median barometric altitude dropping from 7,700 ft to 5,300 ft ASL) and contracted **0.74 km closer** (median 3D slant distance dropping from 2.26 km to 1.52 km).
+* **Structural Directional Reversal:** Commercial arrival tracks underwent a complete substitution from predominantly North–South paths (77.6% pre-VAMP) to East–West arrival corridors (93.0% post-VAMP).
+* **Negative Controls & Methods Validation:** Flight categories unaffected by VAMP—light fixed-wing aircraft (RR = 0.90×, p = 0.13) and commercial flights ≥10,000 ft (RR = 1.05×, p = 0.76)—showed no significant change. Official Statistics Canada data confirmed that YVR total airport movements were essentially flat (−0.5%), refuting regional traffic growth.
 
 ---
 
-## Key Visualizations
+## Headline Measurements (Pass-Based Census)
 
-### 1. Monthly Overflight Distribution & Daily Ranges
-![Monthly Boxplot](./monthly_overflights_boxplot.png)
+| Operational Category | Pre-VAMP (317 days) | Post-VAMP (256 days) | Rate Ratio (95% CI) | Statistical Significance |
+| :--- | :---: | :---: | :---: | :---: |
+| **Commercial arrivals within 500 m** | **2.23 / day** | **15.03 / day** | **6.73×** (5.85–7.81) | p = 1.03e-54 |
+| **All commercial arrivals within 1.5 km** | **6.57 / day** | **51.71 / day** | **7.87×** (7.15–8.67) | p = 2.23e-93 |
+| **Business & private aircraft within 1.5 km** | 1.79 / day | 4.48 / day | **2.50×** (2.18–2.88) | p = 2.15e-34 |
+| **All aircraft combined within 1.5 km** | **20.15 / day** | **69.54 / day** | **3.45×** (3.20–3.71) | p = 6.09e-84 |
+| **Control: Light fixed-wing GA (excl. heli)** | 8.85 / day | 7.93 / day | 0.90× (0.78–1.03) | p = 0.13 *(not significant)* |
+| **Control: Commercial traffic at 10,000+ ft** | 0.50 / day | 0.52 / day | 1.05× (0.80–1.37) | p = 0.76 *(not significant)* |
+| **Median altitude of arrivals within 500 m** | 7,700 ft | 5,300 ft | **2,400 ft lower** | IQR: 4,675–5,850 ft |
+| **Median 3D slant distance from summit** | 2.26 km | 1.52 km | **0.74 km closer** | IQR: 1.33–1.68 km |
 
-### 2. Flight Density Heatmap (Local Time vs. Day of Week)
-![Density Heatmap](./flight_density_heatmap.png)
+*Denominators are operational days with usable archives (317 pre-VAMP, 256 post-VAMP). Rate ratios are post/pre daily means with 95% percentile bootstrap confidence intervals (4,000 resamples); p-values from two-sided Mann–Whitney U test.*
+
+---
+
+## Publication Figures
+
+### Rate Ratios & Control Comparisons
+![Rate Ratios Forest Plot](./figures/fig2_rate_ratios_forest.png)
+
+### 20-Month Daily Overflight Timeseries
+![Timeseries](./figures/fig3_monthly_timeseries.png)
+
+### Altitude Distribution Shifts at Closest Approach
+![Altitude Distributions](./figures/fig4_altitude_comparison.png)
+
+### Corridor Geometry & Boundary Truncation
+![Corridor Truncation](./figures/fig5_corridor_truncation.png)
 
 ---
 
 ## Repository Structure
 
 ```text
-├── README.md                                          # Project documentation
-├── LICENSE                                            # MIT (Code) + CC BY 4.0 (Data & Reports)
-├── requirements.txt                                   # Python dependencies
-├── Capitol_Hill_Overflight_Independent_Study_2025-2026.pdf # Full 12-page study report
+├── README.md                                          # Project documentation & headline results
+├── CHANGELOG.md                                       # Full audit changelog of all corrected values
+├── reference_audit.md                                 # Verification audit of all 24 citations
+├── open_questions.md                                  # Methodological limitations & open questions
+├── LICENSE                                            # MIT (Code) + CC BY 4.0 (Data) + OGL-Canada
+├── verify.py                                          # Automated verification test suite
 │
-├── config.py                                          # Coordinate parameters & bounding box limits
-├── geo_utils.py                                       # Haversine distance, bounding box & trajectory parsing
-├── database.py                                        # SQLite schema, indexing, and upsert routines
-├── stream_reader.py                                   # Streaming decompressor for tar/tar.gz archives
-├── pipeline.py                                        # Automated ADS-B extraction pipeline (adsb.lol)
+├── Capitol_Hill_Overflight_Manuscript_v2.docx         # Revised academic manuscript (JOAS format)
+├── generate_figures.py                                # Generates all 300 DPI publication figures
+├── generate_manuscript_v2.py                          # Compiles manuscript DOCX with hyperlinked references
 │
-├── analyze.py                                         # Statistical aggregation, boxplots, and heatmaps
-├── generate_report_figures.py                         # 300 DPI publication-ready figures
-├── generate_pdf_report.py                             # Automated 4-page summary PDF generator (ReportLab)
-│
-├── exports/                                           # Auditable CSV exports
+├── data/                                              # Authoritative read-only research inputs
 │   ├── capitol_hill_all_flights.csv                   # Full record-level dataset (20,093 records)
-│   ├── daily_flight_counts_complete_months.csv        # Daily flight tallies
-│   └── monthly_flight_summary_complete_months.csv     # Monthly summary statistics
-└── report_figures/                                    # Generated publication assets
+│   ├── capitol_hill_passes.csv                        # Reconstructed discrete passes (24,190 passes)
+│   ├── daily_flight_counts_complete_months.csv        # Daily flight counts
+│   ├── 23100296.csv                                   # Statistics Canada Table 23-10-0296 (Airports)
+│   ├── 23100303.csv                                   # Statistics Canada Table 23-10-0303 (Provinces)
+│   └── 23100298.csv                                   # Statistics Canada Table 23-10-0298 (Itinerant GA)
+│
+├── analysis/                                          # Reproducible modular analysis scripts
+│   ├── build_all.py                                   # Master orchestrator compiling results.json
+│   ├── results.json                                   # Machine-readable master statistics output
+│   ├── aircraft_classification.json                   # Verified operational airframe mapping
+│   ├── monthly_summary_recomputed.csv                 # Recomputed 20-month monthly census
+│   ├── section2_1_coverage_passes.py                  # Pass clustering & threshold sensitivity
+│   ├── section2_2_changepoint.py                      # Least-squares & PELT changepoint detection
+│   ├── section2_3_categorisation.py                   # Categorization & vertical rate validation
+│   ├── section2_4_rate_ratios.py                      # Bootstrap CIs & Mann-Whitney U tests
+│   ├── section2_5_altitude_proximity.py               # Altitude & 3D slant distance geometry
+│   ├── section2_6_direction.py                        # Heading band distribution tables
+│   ├── section2_7_corridor_truncation.py              # Corridor localization & radius sensitivity
+│   ├── section2_8_seasonality.py                      # Season-matched sensitivity analysis
+│   ├── section2_9_statcan.py                          # StatCan benchmark ratios
+│   └── section4_helicopters.py                        # Helicopter trend & limitation analysis
+│
+├── figures/                                           # Regenerated publication figures (300 DPI)
+└── deprecated/                                        # Quarantined legacy files & documentation
 ```
 
 ---
 
-## Getting Started & Reproducibility
+## Replication & Verification
 
-### Prerequisites
-* Python 3.10+
-* SQLite 3
+To verify all numbers in the manuscript against the authoritative record-level data:
 
-### Installation
 ```bash
-git clone https://github.com/oncoapop/capitol_hill_flights.git
-cd capitol_hill_flights
-python3 -m venv .venv
+# 1. Activate virtual environment
 source .venv/bin/activate
-pip install -r requirements.txt
-```
 
-### Reproduce the Analysis & Visualizations
-To regenerate the statistical aggregations, box plots, and heatmaps from the database:
-```bash
-python3 analyze.py
-```
+# 2. Run verification test suite
+python verify.py
 
-To regenerate the publication figures:
-```bash
-python3 generate_report_figures.py
-```
+# 3. Regenerate all analysis sections and master results.json
+python analysis/build_all.py
 
-To compile the automated summary PDF report:
-```bash
-python3 generate_pdf_report.py
+# 4. Regenerate publication figures
+python generate_figures.py
+
+# 5. Build manuscript DOCX
+python generate_manuscript_v2.py
 ```
 
 ---
 
-## Data Source & Methodology
+## Open Science, Licensing, and Attribution
 
-* **Telemetry Source:** Public crowdsourced Mode S / ADS-B records from the [adsb.lol](https://adsb.lol) open database archives (`globe_history_2025` and `globe_history_2026`).
-* **Filtering:** Two-stage spatial filter consisting of a rectangular bounding box pre-filter followed by an exact great-circle Haversine computation against the Capitol Hill summit coordinates (`49.2869° N, 122.9853° W`) with a 1.500 km radius.
-* **Open Science & Data Availability:** The complete record-level dataset of 20,093 flights is published directly in `exports/capitol_hill_all_flights.csv` to ensure complete reproducibility.
-
----
-
-## License & Citation
-
-* **Software / Scripts:** Licensed under the [MIT License](./LICENSE).
-* **Data, Reports & Figures:** Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-
-### Citation
-```bibtex
-@techreport{yap2026capitolhill,
-  author      = {Yap, Damian},
-  title       = {Aircraft Overflight of Capitol Hill, Burnaby: An independent measurement study using open ADS-B records, January 2025 -- August 2026},
-  institution = {Independent Study},
-  address     = {Burnaby, British Columbia, Canada},
-  year        = {2026},
-  month       = {September},
-  url         = {https://github.com/oncoapop/capitol_hill_flights}
-}
-```
+* **Software and Code:** Licensed under the [MIT License](./LICENSE).
+* **Data, Reports, and Manuscript Text:** Licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+* **Statistics Canada Data:** Contains information licensed under the [Open Government Licence – Canada](https://open.canada.ca/en/open-government-licence-canada).
+* **ADS-B Telemetry Archives:** Curated by the open-source community at [adsb.lol](https://globe.adsb.lol).

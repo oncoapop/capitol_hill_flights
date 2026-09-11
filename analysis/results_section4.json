@@ -1,0 +1,33 @@
+{
+  "all_helicopters": {
+    "pre_passes_per_day": 1.5930599369085174,
+    "post_passes_per_day": 4.375,
+    "rate_ratio": 2.746287128712871,
+    "ci_95": [
+      2.2526606437788907,
+      3.326364635739164
+    ],
+    "p_value": 2.647410014335679e-06
+  },
+  "r44_training_private": {
+    "pre_rate": 0.7287066246056783,
+    "post_rate": 0.6015625,
+    "rate_ratio": 0.8255208333333333
+  },
+  "low_altitude_helicopters_sub_2000ft": {
+    "pre_rate": 1.4605678233438486,
+    "post_rate": 1.94921875,
+    "rate_ratio": 1.3345622975161986
+  },
+  "s76_aw139_transport_medevac": {
+    "counts_jan_jun_2025": 5,
+    "counts_jan_jun_2026": 307,
+    "fold_increase": 61.4
+  },
+  "statcan_vancouver_harbour": {
+    "movements_jan_jun_2025": 23031.0,
+    "movements_jan_jun_2026": 27936.0,
+    "growth_pct": 21.297381789761626
+  },
+  "attribution_note": "Secondary changepoint occurs in late April / early May 2026, months after VAMP. Disproportionate increase in S-76/AW139 relative to 21% harbor growth indicates fleet equipage or localized route change, not VAMP arrival procedures."
+}

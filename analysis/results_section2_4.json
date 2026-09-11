@@ -1,0 +1,76 @@
+{
+  "denominators": {
+    "pre_days_with_data": 317,
+    "post_days_with_data": 256
+  },
+  "bootstrap_method": "percentile",
+  "bootstrap_resamples": 4000,
+  "categories": {
+    "commercial_arrivals_500m": {
+      "pre_mean": 2.2334384858044163,
+      "post_mean": 15.03125,
+      "rate_ratio": 6.730093573446328,
+      "ci_95_percentile": [
+        5.854855200388897,
+        7.80948655968595
+      ],
+      "mann_whitney_u": 71119.5,
+      "p_value": 1.0301659513555606e-54
+    },
+    "commercial_arrivals_1500m": {
+      "pre_mean": 6.574132492113565,
+      "post_mean": 51.71484375,
+      "rate_ratio": 7.8664133727207295,
+      "ci_95_percentile": [
+        7.15412560984629,
+        8.669805153815254
+      ],
+      "mann_whitney_u": 80945.0,
+      "p_value": 2.2323743606528513e-93
+    },
+    "business_private": {
+      "pre_mean": 1.7917981072555205,
+      "post_mean": 4.484375,
+      "rate_ratio": 2.5027233714788735,
+      "ci_95_percentile": [
+        2.177864876866795,
+        2.880468212501781
+      ],
+      "mann_whitney_u": 64427.5,
+      "p_value": 2.145541869642737e-34
+    },
+    "all_aircraft_1500m": {
+      "pre_mean": 20.154574132492115,
+      "post_mean": 69.53515625,
+      "rate_ratio": 3.4500930554468616,
+      "ci_95_percentile": [
+        3.2038880527224256,
+        3.7058365077431232
+      ],
+      "mann_whitney_u": 78817.5,
+      "p_value": 6.086006302733082e-84
+    },
+    "control_light_fixed_wing_floatplane": {
+      "pre_mean": 8.848580441640378,
+      "post_mean": 7.93359375,
+      "rate_ratio": 0.8965950868983958,
+      "ci_95_percentile": [
+        0.7815794966012068,
+        1.0283474417674452
+      ],
+      "mann_whitney_u": 37562.0,
+      "p_value": 0.12551551961356427
+    },
+    "control_commercial_high": {
+      "pre_mean": 0.49842271293375395,
+      "post_mean": 0.5234375,
+      "rate_ratio": 1.0501878955696202,
+      "ci_95_percentile": [
+        0.8041617927158953,
+        1.3719147422771243
+      ],
+      "mann_whitney_u": 40068.5,
+      "p_value": 0.7612439984536757
+    }
+  }
+}

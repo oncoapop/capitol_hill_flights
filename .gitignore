@@ -20,3 +20,14 @@ Thumbs.db
 *-superceeded.pdf
 report_page_*.png
 .releases_catalog.json
+
+# Local revision prompt (not committed)
+AGENT_PROMPT_capitol_hill_revision.md
+
+# Temporary StatCan download archives
+*-eng.zip
+*_MetaData.csv
+data_23100298/
+23100298-eng/
+/23100296.csv
+/23100303.csv

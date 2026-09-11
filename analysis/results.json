@@ -1,0 +1,855 @@
+{
+  "metadata": {
+    "source_file": "data/capitol_hill_all_flights.csv",
+    "date_generated": "2026-09-10",
+    "study_period": "2025-01-01 to 2026-08-31"
+  },
+  "section2_1_coverage_passes": {
+    "total_records": 20093,
+    "unique_icaos": 2050,
+    "is_date_icao_unique": true,
+    "calendar_days_total": 608,
+    "days_with_data": 573,
+    "absent_days_count": 35,
+    "absent_dates": [
+      "2025-07-14",
+      "2025-07-18",
+      "2025-07-22",
+      "2025-08-18",
+      "2025-09-04",
+      "2025-09-05",
+      "2025-09-11",
+      "2025-09-22",
+      "2025-10-21",
+      "2025-10-23",
+      "2025-10-24",
+      "2025-10-30",
+      "2025-11-03",
+      "2025-12-17",
+      "2025-12-25",
+      "2026-02-12",
+      "2026-02-26",
+      "2026-02-27",
+      "2026-03-20",
+      "2026-03-21",
+      "2026-04-16",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-12",
+      "2026-06-05",
+      "2026-06-11",
+      "2026-06-17",
+      "2026-06-20",
+      "2026-06-21",
+      "2026-07-03",
+      "2026-07-06",
+      "2026-07-12",
+      "2026-07-13",
+      "2026-07-26",
+      "2026-08-05"
+    ],
+    "pre_changepoint_days_with_data": 317,
+    "post_changepoint_days_with_data": 256,
+    "pre_changepoint_calendar_days": 330,
+    "post_changepoint_calendar_days": 278,
+    "threshold_sensitivity": {
+      "passes_5min": 24403,
+      "passes_10min": 24190,
+      "passes_15min": 23945,
+      "passes_30min": 23462
+    },
+    "primary_passes_10min": 24190,
+    "inflation_factor_overall": 1.2039018563678894,
+    "pre_records": 5542,
+    "post_records": 14551,
+    "pre_passes": 6389,
+    "post_passes": 17801,
+    "inflation_factor_pre": 1.1528329123060268,
+    "inflation_factor_post": 1.2233523469177376,
+    "gap_distribution": {
+      "median_gap_sec": 3.6500000953674316,
+      "pct_gaps_le_60s": 95.22650410356935
+    }
+  },
+  "section2_2_changepoint": {
+    "overall_changepoint_ls": "2025-11-27",
+    "overall_changepoint_binseg": "2025-11-30",
+    "overall_changepoint_pelt": [
+      "2025-11-24",
+      "2026-07-22"
+    ],
+    "airac_cycle": "2513",
+    "airac_cycle_days": 28,
+    "airac_effective_date": "2025-11-27",
+    "parametric_bootstrap": {
+      "resamples": 4000,
+      "pct_exact_match_detected_date": 71.275,
+      "ci_95": [
+        "2025-11-27",
+        "2025-12-01"
+      ]
+    },
+    "helicopter_changepoint": "2026-04-28",
+    "s76_aw139_changepoint": "2026-04-28"
+  },
+  "section2_3_categorisation": {
+    "unclassifiable_records_count": 409,
+    "total_records": 20093,
+    "unclassifiable_fraction": 0.020355347633504207,
+    "unclassifiable_types": [
+      "B14A",
+      "BE23",
+      "BE60",
+      "CH70",
+      "MISSING",
+      "PA18",
+      "PA23",
+      "PA31",
+      "PAY2",
+      "PC24",
+      "PRM1",
+      "RV7",
+      "SHIP",
+      "ULAC",
+      "ZZZZ"
+    ],
+    "vertical_rate_validation": {
+      "commercial_arrivals": {
+        "median_fpm": -926.6920397357454,
+        "mean_fpm": -271.22511765132907,
+        "pct_descending": 68.57832779957742,
+        "n": 6626
+      },
+      "commercial_high": {
+        "median_fpm": 2289.009749091857,
+        "mean_fpm": 2077.92657232504,
+        "pct_climbing": 92.72727272727272,
+        "pct_descending": 6.363636363636363,
+        "n": 110
+      },
+      "business": {
+        "median_fpm": 0.0,
+        "mean_fpm": 448.21196347289066,
+        "pct_descending": 43.904958677685954,
+        "n": 968
+      },
+      "light": {
+        "median_fpm": 0.0,
+        "mean_fpm": -65.60457876055986,
+        "pct_level_or_desc": 71.30449887093972,
+        "n": 5757
+      }
+    }
+  },
+  "section2_4_rate_ratios": {
+    "denominators": {
+      "pre_days_with_data": 317,
+      "post_days_with_data": 256
+    },
+    "bootstrap_method": "percentile",
+    "bootstrap_resamples": 4000,
+    "categories": {
+      "commercial_arrivals_500m": {
+        "pre_mean": 2.2334384858044163,
+        "post_mean": 15.03125,
+        "rate_ratio": 6.730093573446328,
+        "ci_95_percentile": [
+          5.854855200388897,
+          7.80948655968595
+        ],
+        "mann_whitney_u": 71119.5,
+        "p_value": 1.0301659513555606e-54
+      },
+      "commercial_arrivals_1500m": {
+        "pre_mean": 6.574132492113565,
+        "post_mean": 51.71484375,
+        "rate_ratio": 7.8664133727207295,
+        "ci_95_percentile": [
+          7.15412560984629,
+          8.669805153815254
+        ],
+        "mann_whitney_u": 80945.0,
+        "p_value": 2.2323743606528513e-93
+      },
+      "business_private": {
+        "pre_mean": 1.7917981072555205,
+        "post_mean": 4.484375,
+        "rate_ratio": 2.5027233714788735,
+        "ci_95_percentile": [
+          2.177864876866795,
+          2.880468212501781
+        ],
+        "mann_whitney_u": 64427.5,
+        "p_value": 2.145541869642737e-34
+      },
+      "all_aircraft_1500m": {
+        "pre_mean": 20.154574132492115,
+        "post_mean": 69.53515625,
+        "rate_ratio": 3.4500930554468616,
+        "ci_95_percentile": [
+          3.2038880527224256,
+          3.7058365077431232
+        ],
+        "mann_whitney_u": 78817.5,
+        "p_value": 6.086006302733082e-84
+      },
+      "control_light_fixed_wing_floatplane": {
+        "pre_mean": 8.848580441640378,
+        "post_mean": 7.93359375,
+        "rate_ratio": 0.8965950868983958,
+        "ci_95_percentile": [
+          0.7815794966012068,
+          1.0283474417674452
+        ],
+        "mann_whitney_u": 37562.0,
+        "p_value": 0.12551551961356427
+      },
+      "control_commercial_high": {
+        "pre_mean": 0.49842271293375395,
+        "post_mean": 0.5234375,
+        "rate_ratio": 1.0501878955696202,
+        "ci_95_percentile": [
+          0.8041617927158953,
+          1.3719147422771243
+        ],
+        "mann_whitney_u": 40068.5,
+        "p_value": 0.7612439984536757
+      }
+    }
+  },
+  "section2_5_altitude_proximity": {
+    "summit_elevation_m": 115.0,
+    "record_level": {
+      "pre": {
+        "n": 695,
+        "alt_median_ft": 7700.0,
+        "alt_iqr_ft": [
+          6800.0,
+          8475.0
+        ],
+        "slant_median_km": 2.258313849224682,
+        "slant_iqr_km": [
+          1.9799098562008646,
+          2.4820822182250724
+        ]
+      },
+      "post": {
+        "n": 3406,
+        "alt_median_ft": 5325.0,
+        "alt_iqr_ft": [
+          4700.0,
+          5850.0
+        ],
+        "slant_median_km": 1.5224047846285438,
+        "slant_iqr_km": [
+          1.3343364389988064,
+          1.6794323973184715
+        ]
+      }
+    },
+    "pass_level": {
+      "pre": {
+        "n": 708,
+        "alt_median_ft": 7700.0,
+        "alt_iqr_ft": [
+          6800.0,
+          8481.25
+        ],
+        "slant_median_km": 2.2629323218114825,
+        "slant_iqr_km": [
+          1.9809810683298472,
+          2.4867485268633183
+        ]
+      },
+      "post": {
+        "n": 3848,
+        "alt_median_ft": 5300.0,
+        "alt_iqr_ft": [
+          4675.0,
+          5850.0
+        ],
+        "slant_median_km": 1.5159479634618314,
+        "slant_iqr_km": [
+          1.3266956676430226,
+          1.6781573089079185
+        ]
+      }
+    }
+  },
+  "section2_6_direction": {
+    "heading_bands": {
+      "E": "060-120 deg",
+      "W": "240-300 deg",
+      "N": "330-030 deg",
+      "S": "150-210 deg",
+      "Other": "remaining angles or missing"
+    },
+    "table": {
+      "Commercial arrivals": {
+        "Before": {
+          "total": 1957,
+          "counts": {
+            "E": 48,
+            "W": 46,
+            "N": 1518,
+            "S": 180,
+            "Other": 165
+          }
+        },
+        "After": {
+          "total": 11103,
+          "counts": {
+            "E": 3778,
+            "W": 6543,
+            "N": 590,
+            "S": 9,
+            "Other": 183
+          }
+        }
+      },
+      "Business / private": {
+        "Before": {
+          "total": 515,
+          "counts": {
+            "E": 83,
+            "W": 11,
+            "N": 311,
+            "S": 9,
+            "Other": 101
+          }
+        },
+        "After": {
+          "total": 1028,
+          "counts": {
+            "E": 363,
+            "W": 442,
+            "N": 137,
+            "S": 2,
+            "Other": 84
+          }
+        }
+      },
+      "Control: light/float/heli": {
+        "Before": {
+          "total": 2703,
+          "counts": {
+            "E": 1822,
+            "W": 381,
+            "N": 12,
+            "S": 14,
+            "Other": 474
+          }
+        },
+        "After": {
+          "total": 2108,
+          "counts": {
+            "E": 1261,
+            "W": 365,
+            "N": 28,
+            "S": 4,
+            "Other": 450
+          }
+        }
+      },
+      "Control: commercial >=10,000 ft": {
+        "Before": {
+          "total": 155,
+          "counts": {
+            "E": 14,
+            "W": 36,
+            "N": 67,
+            "S": 5,
+            "Other": 33
+          }
+        },
+        "After": {
+          "total": 113,
+          "counts": {
+            "E": 6,
+            "W": 58,
+            "N": 27,
+            "S": 2,
+            "Other": 20
+          }
+        }
+      }
+    }
+  },
+  "section2_7_corridor_truncation": {
+    "eastbound_corridor": {
+      "heading_band": "060-150 deg",
+      "n": 3918,
+      "median_lat": 49.285971,
+      "distance_from_summit_km": -0.10329550999992122,
+      "median_alt_ft": 5150.0,
+      "median_gs_kt": 226.8,
+      "median_cpa_dist_km": 0.17835,
+      "lateral_iqr_m": 155.22123999997007
+    },
+    "westbound_corridor": {
+      "heading_band": "240-330 deg",
+      "n": 6554,
+      "median_lat": 49.274002,
+      "distance_from_summit_km": -1.4341286199999836,
+      "median_alt_ft": 8300.0,
+      "median_gs_kt": 248.3,
+      "median_cpa_dist_km": 1.4709,
+      "lateral_iqr_m": 56.0397599999326,
+      "truncated_by_boundary": true
+    },
+    "radius_sensitivity": {
+      "curve": [
+        {
+          "radius_km": 0.1,
+          "count": 726,
+          "pct": 6.5387733045122935
+        },
+        {
+          "radius_km": 0.2,
+          "count": 2276,
+          "pct": 20.498964243898047
+        },
+        {
+          "radius_km": 0.3,
+          "count": 2913,
+          "pct": 26.23615239124561
+        },
+        {
+          "radius_km": 0.4,
+          "count": 3194,
+          "pct": 28.766999909934256
+        },
+        {
+          "radius_km": 0.5,
+          "count": 3406,
+          "pct": 30.67639376745024
+        },
+        {
+          "radius_km": 0.6,
+          "count": 3553,
+          "pct": 32.00036026299198
+        },
+        {
+          "radius_km": 0.7,
+          "count": 3689,
+          "pct": 33.22525443573809
+        },
+        {
+          "radius_km": 0.8,
+          "count": 3818,
+          "pct": 34.38710258488697
+        },
+        {
+          "radius_km": 0.9,
+          "count": 3945,
+          "pct": 35.53093758443664
+        },
+        {
+          "radius_km": 1.0,
+          "count": 4054,
+          "pct": 36.512654237593445
+        },
+        {
+          "radius_km": 1.1,
+          "count": 4172,
+          "pct": 37.57543006394668
+        },
+        {
+          "radius_km": 1.2,
+          "count": 4295,
+          "pct": 38.68323876429794
+        },
+        {
+          "radius_km": 1.3,
+          "count": 4435,
+          "pct": 39.944159236242456
+        },
+        {
+          "radius_km": 1.4,
+          "count": 4881,
+          "pct": 43.961091596865714
+        },
+        {
+          "radius_km": 1.5,
+          "count": 11103,
+          "pct": 100.0
+        }
+      ],
+      "final_100m_entries_pct": 56.03890840313429
+    }
+  },
+  "section2_8_seasonality": {
+    "season_window": "January 1 - August 31 (2025 vs 2026)",
+    "days_2025": 239,
+    "days_2026": 223,
+    "record_level": {
+      "commercial_arrivals_1500m": {
+        "rate_2025": 6.2092050209205025,
+        "rate_2026": 42.43497757847533,
+        "rate_ratio": 6.834204610010515
+      },
+      "commercial_arrivals_500m": {
+        "rate_2025": 2.1841004184100417,
+        "rate_2026": 13.780269058295964,
+        "rate_ratio": 6.309356906001409
+      },
+      "control_light_fixed_wing": {
+        "rate_2025": 7.907949790794979,
+        "rate_2026": 7.237668161434978,
+        "rate_ratio": 0.9152395188269628
+      }
+    },
+    "pass_level": {
+      "commercial_arrivals_1500m": {
+        "rate_2025": 6.635983263598327,
+        "rate_2026": 50.73094170403587,
+        "rate_ratio": 7.644826650229869
+      },
+      "commercial_arrivals_500m": {
+        "rate_2025": 2.2301255230125525,
+        "rate_2026": 15.614349775784753,
+        "rate_ratio": 7.001556466064832
+      },
+      "control_light_fixed_wing": {
+        "rate_2025": 9.410041841004183,
+        "rate_2026": 8.681614349775785,
+        "rate_ratio": 0.9225904088912462
+      }
+    }
+  },
+  "section2_9_statcan": {
+    "window": "Jan-Jun 2025 vs Jan-Jun 2026",
+    "statcan": {
+      "YVR": {
+        "movements_2025_jan_jun": 142014.0,
+        "movements_2026_jan_jun": 141258.0,
+        "ratio": 0.994676581182137
+      },
+      "Boundary_Bay": {
+        "movements_2025_jan_jun": 130506.0,
+        "movements_2026_jan_jun": 110727.0,
+        "ratio": 0.8484437497126569
+      },
+      "Pitt_Meadows": {
+        "movements_2025_jan_jun": 103416.0,
+        "movements_2026_jan_jun": 91584.0,
+        "ratio": 0.8855883035507078
+      },
+      "Langley": {
+        "movements_2025_jan_jun": 33320.0,
+        "movements_2026_jan_jun": 29048.0,
+        "ratio": 0.8717887154861945
+      },
+      "Vancouver_Harbour": {
+        "movements_2025_jan_jun": 23031.0,
+        "movements_2026_jan_jun": 27936.0,
+        "ratio": 1.2129738178976162
+      },
+      "GA_combined": {
+        "movements_2025_jan_jun": 267242.0,
+        "movements_2026_jan_jun": 231359.0,
+        "ratio": 0.8657284408887824
+      },
+      "BC_all_airports": {
+        "movements_2025_jan_jun": 1610508.0,
+        "movements_2026_jan_jun": 1546028.0,
+        "ratio": 0.9599629433694213
+      }
+    },
+    "adsb_capitol_hill": {
+      "commercial_arrivals": {
+        "daily_rate_2025": 6.331491712707182,
+        "daily_rate_2026": 37.84431137724551,
+        "ratio": 5.977155636371237
+      },
+      "light_fixed_wing_ga": {
+        "daily_rate_2025": 6.906077348066298,
+        "daily_rate_2026": 5.718562874251497,
+        "ratio": 0.8280479041916168
+      }
+    }
+  },
+  "section4_helicopters": {
+    "all_helicopters": {
+      "pre_passes_per_day": 1.5930599369085174,
+      "post_passes_per_day": 4.375,
+      "rate_ratio": 2.746287128712871,
+      "ci_95": [
+        2.2526606437788907,
+        3.326364635739164
+      ],
+      "p_value": 2.647410014335679e-06
+    },
+    "r44_training_private": {
+      "pre_rate": 0.7287066246056783,
+      "post_rate": 0.6015625,
+      "rate_ratio": 0.8255208333333333
+    },
+    "low_altitude_helicopters_sub_2000ft": {
+      "pre_rate": 1.4605678233438486,
+      "post_rate": 1.94921875,
+      "rate_ratio": 1.3345622975161986
+    },
+    "s76_aw139_transport_medevac": {
+      "counts_jan_jun_2025": 5,
+      "counts_jan_jun_2026": 307,
+      "fold_increase": 61.4
+    },
+    "statcan_vancouver_harbour": {
+      "movements_jan_jun_2025": 23031.0,
+      "movements_jan_jun_2026": 27936.0,
+      "growth_pct": 21.297381789761626
+    },
+    "attribution_note": "Secondary changepoint occurs in late April / early May 2026, months after VAMP. Disproportionate increase in S-76/AW139 relative to 21% harbor growth indicates fleet equipage or localized route change, not VAMP arrival procedures."
+  },
+  "table2_monthly_summary": [
+    {
+      "month": "2025-01",
+      "total_flights": 476,
+      "days_with_data": 31,
+      "min_daily": 5,
+      "max_daily": 27,
+      "median_daily": 15.0,
+      "mean_daily": 15.4,
+      "sem_daily": 1.07,
+      "unique_aircraft": 228
+    },
+    {
+      "month": "2025-02",
+      "total_flights": 422,
+      "days_with_data": 28,
+      "min_daily": 4,
+      "max_daily": 24,
+      "median_daily": 15.0,
+      "mean_daily": 15.1,
+      "sem_daily": 0.87,
+      "unique_aircraft": 187
+    },
+    {
+      "month": "2025-03",
+      "total_flights": 462,
+      "days_with_data": 31,
+      "min_daily": 2,
+      "max_daily": 28,
+      "median_daily": 15.0,
+      "mean_daily": 14.9,
+      "sem_daily": 0.97,
+      "unique_aircraft": 210
+    },
+    {
+      "month": "2025-04",
+      "total_flights": 476,
+      "days_with_data": 30,
+      "min_daily": 6,
+      "max_daily": 31,
+      "median_daily": 15.0,
+      "mean_daily": 15.9,
+      "sem_daily": 1.15,
+      "unique_aircraft": 252
+    },
+    {
+      "month": "2025-05",
+      "total_flights": 589,
+      "days_with_data": 31,
+      "min_daily": 6,
+      "max_daily": 32,
+      "median_daily": 19.0,
+      "mean_daily": 19.0,
+      "sem_daily": 1.19,
+      "unique_aircraft": 277
+    },
+    {
+      "month": "2025-06",
+      "total_flights": 667,
+      "days_with_data": 30,
+      "min_daily": 11,
+      "max_daily": 36,
+      "median_daily": 22.5,
+      "mean_daily": 22.2,
+      "sem_daily": 1.36,
+      "unique_aircraft": 300
+    },
+    {
+      "month": "2025-07",
+      "total_flights": 612,
+      "days_with_data": 28,
+      "min_daily": 10,
+      "max_daily": 41,
+      "median_daily": 19.0,
+      "mean_daily": 21.9,
+      "sem_daily": 1.63,
+      "unique_aircraft": 286
+    },
+    {
+      "month": "2025-08",
+      "total_flights": 638,
+      "days_with_data": 30,
+      "min_daily": 9,
+      "max_daily": 43,
+      "median_daily": 21.5,
+      "mean_daily": 21.3,
+      "sem_daily": 1.55,
+      "unique_aircraft": 317
+    },
+    {
+      "month": "2025-09",
+      "total_flights": 471,
+      "days_with_data": 26,
+      "min_daily": 3,
+      "max_daily": 45,
+      "median_daily": 14.5,
+      "mean_daily": 18.1,
+      "sem_daily": 2.08,
+      "unique_aircraft": 252
+    },
+    {
+      "month": "2025-10",
+      "total_flights": 391,
+      "days_with_data": 27,
+      "min_daily": 1,
+      "max_daily": 29,
+      "median_daily": 11.0,
+      "mean_daily": 14.5,
+      "sem_daily": 1.46,
+      "unique_aircraft": 219
+    },
+    {
+      "month": "2025-11",
+      "total_flights": 560,
+      "days_with_data": 29,
+      "min_daily": 2,
+      "max_daily": 71,
+      "median_daily": 14.0,
+      "mean_daily": 19.3,
+      "sem_daily": 3.23,
+      "unique_aircraft": 292
+    },
+    {
+      "month": "2025-12",
+      "total_flights": 1700,
+      "days_with_data": 29,
+      "min_daily": 33,
+      "max_daily": 89,
+      "median_daily": 57.0,
+      "mean_daily": 58.6,
+      "sem_daily": 3.05,
+      "unique_aircraft": 652
+    },
+    {
+      "month": "2026-01",
+      "total_flights": 1802,
+      "days_with_data": 31,
+      "min_daily": 24,
+      "max_daily": 83,
+      "median_daily": 61.0,
+      "mean_daily": 58.1,
+      "sem_daily": 2.89,
+      "unique_aircraft": 703
+    },
+    {
+      "month": "2026-02",
+      "total_flights": 1377,
+      "days_with_data": 25,
+      "min_daily": 23,
+      "max_daily": 109,
+      "median_daily": 49.0,
+      "mean_daily": 55.1,
+      "sem_daily": 4.13,
+      "unique_aircraft": 602
+    },
+    {
+      "month": "2026-03",
+      "total_flights": 1338,
+      "days_with_data": 29,
+      "min_daily": 18,
+      "max_daily": 87,
+      "median_daily": 35.0,
+      "mean_daily": 46.1,
+      "sem_daily": 4.21,
+      "unique_aircraft": 584
+    },
+    {
+      "month": "2026-04",
+      "total_flights": 1244,
+      "days_with_data": 29,
+      "min_daily": 16,
+      "max_daily": 74,
+      "median_daily": 44.0,
+      "mean_daily": 42.9,
+      "sem_daily": 2.73,
+      "unique_aircraft": 579
+    },
+    {
+      "month": "2026-05",
+      "total_flights": 1295,
+      "days_with_data": 28,
+      "min_daily": 20,
+      "max_daily": 100,
+      "median_daily": 42.5,
+      "mean_daily": 46.2,
+      "sem_daily": 3.57,
+      "unique_aircraft": 582
+    },
+    {
+      "month": "2026-06",
+      "total_flights": 1201,
+      "days_with_data": 25,
+      "min_daily": 18,
+      "max_daily": 114,
+      "median_daily": 46.0,
+      "mean_daily": 48.0,
+      "sem_daily": 4.69,
+      "unique_aircraft": 588
+    },
+    {
+      "month": "2026-07",
+      "total_flights": 1865,
+      "days_with_data": 26,
+      "min_daily": 17,
+      "max_daily": 121,
+      "median_daily": 72.0,
+      "mean_daily": 71.7,
+      "sem_daily": 5.95,
+      "unique_aircraft": 791
+    },
+    {
+      "month": "2026-08",
+      "total_flights": 2507,
+      "days_with_data": 30,
+      "min_daily": 47,
+      "max_daily": 128,
+      "median_daily": 88.5,
+      "mean_daily": 83.6,
+      "sem_daily": 3.98,
+      "unique_aircraft": 879
+    }
+  ],
+  "fleet_composition_m3": {
+    "DH8D": {
+      "count": 3432,
+      "pct": 17.08057532473996
+    },
+    "C172": {
+      "count": 1882,
+      "pct": 9.366446025979197
+    },
+    "B38M": {
+      "count": 1240,
+      "pct": 6.17130343900861
+    },
+    "B738": {
+      "count": 951,
+      "pct": 4.732991589110636
+    },
+    "Boeing_7xx_family": {
+      "count": 3985,
+      "pct": 19.832777584233316
+    }
+  },
+  "diurnal_night_traffic_m4": {
+    "night_hours": "23:00 - 05:59",
+    "night_count": 1032,
+    "total_records": 20093,
+    "night_pct": 5.136117055691037
+  }
+}
