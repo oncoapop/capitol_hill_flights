@@ -1,0 +1,21 @@
+{
+  "overall_changepoint_ls": "2025-11-27",
+  "overall_changepoint_binseg": "2025-11-30",
+  "overall_changepoint_pelt": [
+    "2025-11-24",
+    "2026-07-22"
+  ],
+  "airac_cycle": "2513",
+  "airac_cycle_days": 28,
+  "airac_effective_date": "2025-11-27",
+  "parametric_bootstrap": {
+    "resamples": 4000,
+    "pct_exact_match_detected_date": 71.275,
+    "ci_95": [
+      "2025-11-27",
+      "2025-12-01"
+    ]
+  },
+  "helicopter_changepoint": "2026-04-28",
+  "s76_aw139_changepoint": "2026-04-28"
+}

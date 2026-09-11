@@ -1,0 +1,103 @@
+{
+  "eastbound_corridor": {
+    "heading_band": "060-150 deg",
+    "n": 3918,
+    "median_lat": 49.285971,
+    "distance_from_summit_km": -0.10329550999992122,
+    "median_alt_ft": 5150.0,
+    "median_gs_kt": 226.8,
+    "median_cpa_dist_km": 0.17835,
+    "lateral_iqr_m": 155.22123999997007
+  },
+  "westbound_corridor": {
+    "heading_band": "240-330 deg",
+    "n": 6554,
+    "median_lat": 49.274002,
+    "distance_from_summit_km": -1.4341286199999836,
+    "median_alt_ft": 8300.0,
+    "median_gs_kt": 248.3,
+    "median_cpa_dist_km": 1.4709,
+    "lateral_iqr_m": 56.0397599999326,
+    "truncated_by_boundary": true
+  },
+  "radius_sensitivity": {
+    "curve": [
+      {
+        "radius_km": 0.1,
+        "count": 726,
+        "pct": 6.5387733045122935
+      },
+      {
+        "radius_km": 0.2,
+        "count": 2276,
+        "pct": 20.498964243898047
+      },
+      {
+        "radius_km": 0.3,
+        "count": 2913,
+        "pct": 26.23615239124561
+      },
+      {
+        "radius_km": 0.4,
+        "count": 3194,
+        "pct": 28.766999909934256
+      },
+      {
+        "radius_km": 0.5,
+        "count": 3406,
+        "pct": 30.67639376745024
+      },
+      {
+        "radius_km": 0.6,
+        "count": 3553,
+        "pct": 32.00036026299198
+      },
+      {
+        "radius_km": 0.7,
+        "count": 3689,
+        "pct": 33.22525443573809
+      },
+      {
+        "radius_km": 0.8,
+        "count": 3818,
+        "pct": 34.38710258488697
+      },
+      {
+        "radius_km": 0.9,
+        "count": 3945,
+        "pct": 35.53093758443664
+      },
+      {
+        "radius_km": 1.0,
+        "count": 4054,
+        "pct": 36.512654237593445
+      },
+      {
+        "radius_km": 1.1,
+        "count": 4172,
+        "pct": 37.57543006394668
+      },
+      {
+        "radius_km": 1.2,
+        "count": 4295,
+        "pct": 38.68323876429794
+      },
+      {
+        "radius_km": 1.3,
+        "count": 4435,
+        "pct": 39.944159236242456
+      },
+      {
+        "radius_km": 1.4,
+        "count": 4881,
+        "pct": 43.961091596865714
+      },
+      {
+        "radius_km": 1.5,
+        "count": 11103,
+        "pct": 100.0
+      }
+    ],
+    "final_100m_entries_pct": 56.03890840313429
+  }
+}

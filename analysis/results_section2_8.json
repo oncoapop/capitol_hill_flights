@@ -1,0 +1,39 @@
+{
+  "season_window": "January 1 - August 31 (2025 vs 2026)",
+  "days_2025": 239,
+  "days_2026": 223,
+  "record_level": {
+    "commercial_arrivals_1500m": {
+      "rate_2025": 6.2092050209205025,
+      "rate_2026": 42.43497757847533,
+      "rate_ratio": 6.834204610010515
+    },
+    "commercial_arrivals_500m": {
+      "rate_2025": 2.1841004184100417,
+      "rate_2026": 13.780269058295964,
+      "rate_ratio": 6.309356906001409
+    },
+    "control_light_fixed_wing": {
+      "rate_2025": 7.907949790794979,
+      "rate_2026": 7.237668161434978,
+      "rate_ratio": 0.9152395188269628
+    }
+  },
+  "pass_level": {
+    "commercial_arrivals_1500m": {
+      "rate_2025": 6.635983263598327,
+      "rate_2026": 50.73094170403587,
+      "rate_ratio": 7.644826650229869
+    },
+    "commercial_arrivals_500m": {
+      "rate_2025": 2.2301255230125525,
+      "rate_2026": 15.614349775784753,
+      "rate_ratio": 7.001556466064832
+    },
+    "control_light_fixed_wing": {
+      "rate_2025": 9.410041841004183,
+      "rate_2026": 8.681614349775785,
+      "rate_ratio": 0.9225904088912462
+    }
+  }
+}

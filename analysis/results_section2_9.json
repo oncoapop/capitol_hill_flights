@@ -1,0 +1,52 @@
+{
+  "window": "Jan-Jun 2025 vs Jan-Jun 2026",
+  "statcan": {
+    "YVR": {
+      "movements_2025_jan_jun": 142014.0,
+      "movements_2026_jan_jun": 141258.0,
+      "ratio": 0.994676581182137
+    },
+    "Boundary_Bay": {
+      "movements_2025_jan_jun": 130506.0,
+      "movements_2026_jan_jun": 110727.0,
+      "ratio": 0.8484437497126569
+    },
+    "Pitt_Meadows": {
+      "movements_2025_jan_jun": 103416.0,
+      "movements_2026_jan_jun": 91584.0,
+      "ratio": 0.8855883035507078
+    },
+    "Langley": {
+      "movements_2025_jan_jun": 33320.0,
+      "movements_2026_jan_jun": 29048.0,
+      "ratio": 0.8717887154861945
+    },
+    "Vancouver_Harbour": {
+      "movements_2025_jan_jun": 23031.0,
+      "movements_2026_jan_jun": 27936.0,
+      "ratio": 1.2129738178976162
+    },
+    "GA_combined": {
+      "movements_2025_jan_jun": 267242.0,
+      "movements_2026_jan_jun": 231359.0,
+      "ratio": 0.8657284408887824
+    },
+    "BC_all_airports": {
+      "movements_2025_jan_jun": 1610508.0,
+      "movements_2026_jan_jun": 1546028.0,
+      "ratio": 0.9599629433694213
+    }
+  },
+  "adsb_capitol_hill": {
+    "commercial_arrivals": {
+      "daily_rate_2025": 6.331491712707182,
+      "daily_rate_2026": 37.84431137724551,
+      "ratio": 5.977155636371237
+    },
+    "light_fixed_wing_ga": {
+      "daily_rate_2025": 6.906077348066298,
+      "daily_rate_2026": 5.718562874251497,
+      "ratio": 0.8280479041916168
+    }
+  }
+}

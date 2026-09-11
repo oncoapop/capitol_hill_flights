@@ -1,0 +1,49 @@
+{
+  "unclassifiable_records_count": 409,
+  "total_records": 20093,
+  "unclassifiable_fraction": 0.020355347633504207,
+  "unclassifiable_types": [
+    "B14A",
+    "BE23",
+    "BE60",
+    "CH70",
+    "MISSING",
+    "PA18",
+    "PA23",
+    "PA31",
+    "PAY2",
+    "PC24",
+    "PRM1",
+    "RV7",
+    "SHIP",
+    "ULAC",
+    "ZZZZ"
+  ],
+  "vertical_rate_validation": {
+    "commercial_arrivals": {
+      "median_fpm": -926.6920397357454,
+      "mean_fpm": -271.22511765132907,
+      "pct_descending": 68.57832779957742,
+      "n": 6626
+    },
+    "commercial_high": {
+      "median_fpm": 2289.009749091857,
+      "mean_fpm": 2077.92657232504,
+      "pct_climbing": 92.72727272727272,
+      "pct_descending": 6.363636363636363,
+      "n": 110
+    },
+    "business": {
+      "median_fpm": 0.0,
+      "mean_fpm": 448.21196347289066,
+      "pct_descending": 43.904958677685954,
+      "n": 968
+    },
+    "light": {
+      "median_fpm": 0.0,
+      "mean_fpm": -65.60457876055986,
+      "pct_level_or_desc": 71.30449887093972,
+      "n": 5757
+    }
+  }
+}
