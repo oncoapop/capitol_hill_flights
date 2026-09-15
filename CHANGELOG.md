@@ -1,5 +1,20 @@
 # Changelog — Capitol Hill Overflight Study Revision (v2.0)
 
+## v2.1 — Aircraft Classification Audit (2026-09-14)
+
+An independent audit of `analysis/aircraft_classification.json` cross-referenced every ICAO `type_code` against the dataset's own `type_desc` field and found several misassigned aircraft types:
+
+- **Moved from `commercial` to `business`:** BE40, C68A, C750, E545, F2TH, G150, GALX, GL5T, GLEX, LJ45 — all purpose-built business jets (e.g., Bombardier Global 6000, Cessna Citation X/Latitude, Embraer Praetor 500, Falcon 2000, Learjet 45, Gulfstream G150/G200) that had been counted as commercial airline traffic.
+- **Moved from `commercial` to `light_heli`:** H500, R66 (helicopters), B36T, RV8, TB20, BL17, RBEL (light GA singles).
+- **Moved from `commercial` to `unclassifiable`:** GLID (a glider — Schleicher K7), K35R (a USAF KC-135R tanker), C295 (military transport), CVLT (an unverifiable vintage type, excluded out of caution).
+- **Moved from `business` to `commercial`:** AT72, B39M, B77L, DC10, E190, RJ1H, CRJ2 — genuine regional/mainline airliner types (ATR-72, 737 MAX 9, 777-200LR, DC-10, E190, Avro RJ100, CRJ200) that had been counted as business aviation.
+- **Moved from `business` to `light_heli`:** A139, AS55 — AgustaWestland AW139 and Eurocopter AS355 helicopters. This is the material correction: §5.3 and `open_questions.md` already identify AW139/S-76 as driving an independent, non-VAMP helicopter surge in spring 2026 that should be decoupled from the VAMP analysis, but these two type codes were still being counted inside the "Business & private aircraft" rate-ratio category. `analysis/section2_4_rate_ratios.py`'s `business_private` filter now also excludes the existing `heli_types` set (already used to keep helicopters out of the light-GA control) as a safeguard against the same contamination recurring.
+- **Moved from `business` to `unclassifiable`:** BALL (a hot-air balloon).
+
+**Effect on headline statistics:** Commercial arrival rate ratios are essentially unchanged (500 m: 6.73× → 6.72×; 1.5 km: 7.87× → 7.90×) since the misclassified records are a small share of a large category and roughly cancel out. The **Business & private aircraft** rate ratio changes from **2.50× (2.18–2.88), p = 2.15e-34** to **2.46× (2.14–2.84), p = 2.73e-32** — still highly significant, but the previous figure was measurably inflated by the AW139/AS355 helicopter-surge confound. All figures, `analysis/results.json`, `README.md`, and `Capitol_Hill_Overflight_Manuscript_v2.docx` have been regenerated from the corrected classification and pass the existing `verify.py` suite unchanged (it does not hardcode the business-jet ratio).
+
+---
+
 Date: 2026-09-10  
 Author: Damian Yap, PhD  
 Branch: `revision-v2`  

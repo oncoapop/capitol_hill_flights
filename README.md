@@ -15,10 +15,10 @@
 
 On **27 November 2025** (AIRAC cycle 2513), aircraft overflights above Capitol Hill in Burnaby, BC underwent an abrupt, permanent operational restructuring following NAV CANADA's implementation of the **Vancouver Airspace Modernization Project (VAMP)** for Vancouver International Airport (YVR):
 
-* **Surge in Overhead Arrivals:** Commercial passenger airliner passes within the 500 m summit core increased **6.73-fold** from **2.23 per day** to **15.03 per day** (95% CI: 5.85–7.81; p = 1.03e-54). Across the broader 1.5 km study circle, commercial arrivals rose **7.87-fold** from **6.57 to 51.71 passes per day** (p = 2.23e-93).
+* **Surge in Overhead Arrivals:** Commercial passenger airliner passes within the 500 m summit core increased **6.72-fold** from **2.23 per day** to **15.00 per day** (95% CI: 5.84–7.81; p = 8.14e-55). Across the broader 1.5 km study circle, commercial arrivals rose **7.90-fold** from **6.51 to 51.46 passes per day** (p = 2.76e-93).
 * **Lower and Closer:** Arriving commercial aircraft within 500 m of the summit descended **~2,400 ft lower** (median barometric altitude dropping from 7,700 ft to 5,300 ft ASL) and contracted **0.74 km closer** (median 3D slant distance dropping from 2.26 km to 1.52 km).
 * **Structural Directional Reversal:** Commercial arrival tracks underwent a complete substitution from predominantly North–South paths (77.6% pre-VAMP) to East–West arrival corridors (93.0% post-VAMP).
-* **Negative Controls & Methods Validation:** Flight categories unaffected by VAMP—light fixed-wing aircraft (RR = 0.90×, p = 0.13) and commercial flights ≥10,000 ft (RR = 1.05×, p = 0.76)—showed no significant change. Official Statistics Canada data confirmed that YVR total airport movements were essentially flat (−0.5%), refuting regional traffic growth.
+* **Negative Controls & Methods Validation:** Flight categories unaffected by VAMP—light fixed-wing aircraft (RR = 0.90×, p = 0.12) and commercial flights ≥10,000 ft (RR = 1.03×, p = 0.71)—showed no significant change. Official Statistics Canada data confirmed that YVR total airport movements were essentially flat (−0.5%), refuting regional traffic growth.
 
 ---
 
@@ -26,12 +26,12 @@ On **27 November 2025** (AIRAC cycle 2513), aircraft overflights above Capitol H
 
 | Operational Category | Pre-VAMP (317 days) | Post-VAMP (256 days) | Rate Ratio (95% CI) | Statistical Significance |
 | :--- | :---: | :---: | :---: | :---: |
-| **Commercial arrivals within 500 m** | **2.23 / day** | **15.03 / day** | **6.73×** (5.85–7.81) | p = 1.03e-54 |
-| **All commercial arrivals within 1.5 km** | **6.57 / day** | **51.71 / day** | **7.87×** (7.15–8.67) | p = 2.23e-93 |
-| **Business & private aircraft within 1.5 km** | 1.79 / day | 4.48 / day | **2.50×** (2.18–2.88) | p = 2.15e-34 |
+| **Commercial arrivals within 500 m** | **2.23 / day** | **15.00 / day** | **6.72×** (5.84–7.81) | p = 8.14e-55 |
+| **All commercial arrivals within 1.5 km** | **6.51 / day** | **51.46 / day** | **7.90×** (7.18–8.71) | p = 2.76e-93 |
+| **Business & private aircraft within 1.5 km** | 1.72 / day | 4.24 / day | **2.46×** (2.14–2.84) | p = 2.73e-32 |
 | **All aircraft combined within 1.5 km** | **20.15 / day** | **69.54 / day** | **3.45×** (3.20–3.71) | p = 6.09e-84 |
-| **Control: Light fixed-wing GA (excl. heli)** | 8.85 / day | 7.93 / day | 0.90× (0.78–1.03) | p = 0.13 *(not significant)* |
-| **Control: Commercial traffic at 10,000+ ft** | 0.50 / day | 0.52 / day | 1.05× (0.80–1.37) | p = 0.76 *(not significant)* |
+| **Control: Light fixed-wing GA (excl. heli)** | 8.87 / day | 7.95 / day | 0.90× (0.78–1.03) | p = 0.12 *(not significant)* |
+| **Control: Commercial traffic at 10,000+ ft** | 0.49 / day | 0.51 / day | 1.03× (0.79–1.35) | p = 0.71 *(not significant)* |
 | **Median altitude of arrivals within 500 m** | 7,700 ft | 5,300 ft | **2,400 ft lower** | IQR: 4,675–5,850 ft |
 | **Median 3D slant distance from summit** | 2.26 km | 1.52 km | **0.74 km closer** | IQR: 1.33–1.68 km |
 

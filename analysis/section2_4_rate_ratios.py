@@ -38,7 +38,7 @@ def run():
     categories = {
         "commercial_arrivals_500m": df_passes[df_passes["type_code"].isin(comm_types) & (df_passes["alt_baro"] < 10000) & (df_passes["dist_km"] <= 0.5)],
         "commercial_arrivals_1500m": df_passes[df_passes["type_code"].isin(comm_types) & (df_passes["alt_baro"] < 10000)],
-        "business_private": df_passes[df_passes["type_code"].isin(biz_types)],
+        "business_private": df_passes[df_passes["type_code"].isin(biz_types) & (~df_passes["type_code"].isin(heli_types))],
         "all_aircraft_1500m": df_passes,
         "control_light_fixed_wing_floatplane": df_passes[df_passes["type_code"].isin(light_types) & (~df_passes["type_code"].isin(heli_types))],
         "control_commercial_high": df_passes[df_passes["type_code"].isin(comm_types) & (df_passes["alt_baro"] >= 10000)]

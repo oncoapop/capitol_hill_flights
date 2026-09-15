@@ -1,12 +1,17 @@
 {
-  "unclassifiable_records_count": 409,
+  "unclassifiable_records_count": 459,
   "total_records": 20093,
-  "unclassifiable_fraction": 0.020355347633504207,
+  "unclassifiable_fraction": 0.022843776439556065,
   "unclassifiable_types": [
     "B14A",
+    "BALL",
     "BE23",
     "BE60",
+    "C295",
     "CH70",
+    "CVLT",
+    "GLID",
+    "K35R",
     "MISSING",
     "PA18",
     "PA23",
@@ -21,29 +26,29 @@
   ],
   "vertical_rate_validation": {
     "commercial_arrivals": {
-      "median_fpm": -926.6920397357454,
-      "mean_fpm": -271.22511765132907,
-      "pct_descending": 68.57832779957742,
-      "n": 6626
+      "median_fpm": -930.2880362406994,
+      "mean_fpm": -272.4909288012044,
+      "pct_descending": 68.57359635811837,
+      "n": 6590
     },
     "commercial_high": {
       "median_fpm": 2289.009749091857,
-      "mean_fpm": 2077.92657232504,
-      "pct_climbing": 92.72727272727272,
-      "pct_descending": 6.363636363636363,
-      "n": 110
+      "mean_fpm": 2089.1285815143697,
+      "pct_climbing": 94.11764705882352,
+      "pct_descending": 5.88235294117647,
+      "n": 102
     },
     "business": {
       "median_fpm": 0.0,
-      "mean_fpm": 448.21196347289066,
-      "pct_descending": 43.904958677685954,
-      "n": 968
+      "mean_fpm": 562.2807263874986,
+      "pct_descending": 40.934371523915466,
+      "n": 899
     },
     "light": {
       "median_fpm": 0.0,
-      "mean_fpm": -65.60457876055986,
-      "pct_level_or_desc": 71.30449887093972,
-      "n": 5757
+      "mean_fpm": -76.35677924375918,
+      "pct_level_or_desc": 71.59712722298221,
+      "n": 5848
     }
   }
 }

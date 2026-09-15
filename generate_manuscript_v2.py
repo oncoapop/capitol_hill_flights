@@ -177,11 +177,11 @@ def build_manuscript():
         "Statistics Canada airport movement data.\n\n"
         "Results: Algorithmic least-squares changepoint detection identified an abrupt structural break on 27 November 2025 "
         "(parametric bootstrap 95% CI: 27 Nov – 1 Dec 2025). Commercial arrival passes within the 500-m summit core increased "
-        "6.73-fold from 2.23 to 15.03 passes/day (95% CI 5.85–7.81; p = 1.03e-54), while median CPA altitude decreased from "
+        "6.72-fold from 2.23 to 15.00 passes/day (95% CI 5.84–7.81; p = 8.14e-55), while median CPA altitude decreased from "
         "7,700 ft to 5,300 ft (Δ = 2,400 ft) and 3D slant distance decreased from 2.26 km to 1.52 km. Commercial arrivals "
-        "within 1.5 km increased 7.87-fold (6.57 to 51.71 passes/day; 95% CI 7.15–8.67; p = 2.23e-93), accompanied by a complete "
+        "within 1.5 km increased 7.90-fold (6.51 to 51.46 passes/day; 95% CI 7.18–8.71; p = 2.76e-93), accompanied by a complete "
         "directional reversal from North–South to East–West tracks. Negative control categories showed no significant increase "
-        "(light GA RR = 0.90, 95% CI 0.78–1.03, p = 0.13; high commercial RR = 1.05, 95% CI 0.80–1.37, p = 0.76). Statistics Canada "
+        "(light GA RR = 0.90, 95% CI 0.78–1.03, p = 0.12; high commercial RR = 1.03, 95% CI 0.79–1.35, p = 0.71). Statistics Canada "
         "data confirmed YVR total movements were flat (−0.5%), refuting regional traffic growth.\n\n"
         "Conclusions: VAMP implementation produced an immediate, persistent, and statistically significant concentration of "
         "low-altitude commercial arrivals above Capitol Hill. These findings demonstrate that open, uncensored ADS-B archives "
@@ -607,9 +607,9 @@ def build_manuscript():
         "density, observations were benchmarked against official monthly aircraft movements from Statistics Canada Tables 23-10-0296 and "
         "23-10-0303 for matched Jan–Jun windows in 2025 and 2026 (Figure 7):\n"
         "1. YVR Total Airport Movements were essentially unchanged (142,014 movements in 2025 vs. 141,258 in 2026; ratio 0.995; −0.5%). "
-        "This official datum decisively refutes the hypothesis that regional traffic expansion drove the 5.98-fold increase in Capitol Hill arrivals.\n"
+        "This official datum decisively refutes the hypothesis that regional traffic expansion drove the 6.03-fold increase in Capitol Hill arrivals.\n"
         "2. Regional GA Airports (Boundary Bay, Pitt Meadows, Langley) exhibited a combined 13.4% decline (ratio 0.866). In direct alignment, "
-        "ADS-B light fixed-wing GA over Capitol Hill declined by 17.2% (ratio 0.828). This close concordance between two entirely independent "
+        "ADS-B light fixed-wing GA over Capitol Hill declined by 17.6% (ratio 0.824). This close concordance between two entirely independent "
         "measurement systems demonstrates that crowdsourced ADS-B surveillance accurately tracks real operational trends without artificial receiver-growth bias."
     ))
 
@@ -623,15 +623,15 @@ def build_manuscript():
         _add_run(p, "Figure 7. ", bold=True, size=10)
         _add_run(p, "External validation against official Statistics Canada movement counts (matched Jan–Jun 2025 vs. 2026). "
                     "YVR airport movements were flat (−0.5%), while Capitol Hill arrivals increased sixfold. General aviation airport "
-                    "declines (−13.4%) closely mirrored the ADS-B light GA decline (−17.2%).", size=10)
+                    "declines (−13.4%) closely mirrored the ADS-B light GA decline (−17.6%).", size=10)
 
     _heading(doc, "4.8 Seasonality Robustness Analysis", level=2)
 
     _body(doc, (
         "Season-matched sensitivity analysis across the identical 8-month calendar window (1 January – 31 August 2025 vs. 1 January – 31 August 2026) "
-        "demonstrated that seasonal variations did not confound findings. On a record basis, 1.5-km commercial arrivals rose from 6.21 to 42.43 "
-        "flights/day (RR = 6.83×), 500-m commercial arrivals rose from 2.18 to 13.78 flights/day (RR = 6.31×), while light fixed-wing GA remained "
-        "stable (RR = 0.92×). Pass-based rates showed equivalent stability (1.5-km arrivals RR = 7.64×; 500-m arrivals RR = 7.00×; light GA RR = 0.92×)."
+        "demonstrated that seasonal variations did not confound findings. On a record basis, 1.5-km commercial arrivals rose from 6.14 to 42.22 "
+        "flights/day (RR = 6.88×), 500-m commercial arrivals rose from 2.18 to 13.75 flights/day (RR = 6.31×), while light fixed-wing GA remained "
+        "stable (RR = 0.91×). Pass-based rates showed equivalent stability (1.5-km arrivals RR = 7.69×; 500-m arrivals RR = 7.00×; light GA RR = 0.92×)."
     ))
 
     _heading(doc, "4.9 Recomputed 20-Month Summary Census", level=2)
@@ -692,7 +692,7 @@ def build_manuscript():
 
     _body(doc, (
         "The empirical findings demonstrate an abrupt, highly concentrated operational restructuring of terminal arrivals into YVR. "
-        "The 6.73-fold increase in commercial passes within 500 m of Capitol Hill, combined with a 2,400-ft reduction in median approach "
+        "The 6.72-fold increase in commercial passes within 500 m of Capitol Hill, combined with a 2,400-ft reduction in median approach "
         "altitude and a 0.74-km reduction in 3D slant distance, represents a marked transformation in the localized acoustic environment. "
         "These results mirror findings in the United States, where FAA NextGen RNAV/RNP procedures achieved regional efficiency gains at "
         "the cost of creating severe, localized overflight corridors that bypassed conventional environmental assessments (GAO, 2021; "
@@ -738,7 +738,7 @@ def build_manuscript():
 
     _body(doc, (
         "This 20-month continuous census provides the first independent empirical quantification of NAV CANADA's Vancouver Airspace Modernization "
-        "Project. Implementation of AIRAC cycle 2513 on 27 November 2025 resulted in an immediate, sustained 6.73-fold increase in commercial arrival "
+        "Project. Implementation of AIRAC cycle 2513 on 27 November 2025 resulted in an immediate, sustained 6.72-fold increase in commercial arrival "
         "passes within 500 m of Capitol Hill, a downward altitude shift of ~2,400 ft, and a structural replacement of North–South flight paths with "
         "East–West corridors. Negative controls (light general aviation, en-route commercial traffic) and official Statistics Canada data confirmed "
         "that these observations reflect real route concentration rather than regional traffic growth or surveillance artifacts. Open crowdsourced "

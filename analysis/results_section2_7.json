@@ -1,22 +1,22 @@
 {
   "eastbound_corridor": {
     "heading_band": "060-150 deg",
-    "n": 3918,
+    "n": 3892,
     "median_lat": 49.285971,
     "distance_from_summit_km": -0.10329550999992122,
     "median_alt_ft": 5150.0,
     "median_gs_kt": 226.8,
-    "median_cpa_dist_km": 0.17835,
+    "median_cpa_dist_km": 0.1782,
     "lateral_iqr_m": 155.22123999997007
   },
   "westbound_corridor": {
     "heading_band": "240-330 deg",
-    "n": 6554,
+    "n": 6530,
     "median_lat": 49.274002,
     "distance_from_summit_km": -1.4341286199999836,
     "median_alt_ft": 8300.0,
-    "median_gs_kt": 248.3,
-    "median_cpa_dist_km": 1.4709,
+    "median_gs_kt": 248.2,
+    "median_cpa_dist_km": 1.4708,
     "lateral_iqr_m": 56.0397599999326,
     "truncated_by_boundary": true
   },
@@ -24,80 +24,80 @@
     "curve": [
       {
         "radius_km": 0.1,
-        "count": 726,
-        "pct": 6.5387733045122935
+        "count": 728,
+        "pct": 6.590621039290241
       },
       {
         "radius_km": 0.2,
-        "count": 2276,
-        "pct": 20.498964243898047
+        "count": 2270,
+        "pct": 20.550425493391273
       },
       {
         "radius_km": 0.3,
-        "count": 2913,
-        "pct": 26.23615239124561
+        "count": 2909,
+        "pct": 26.335325004526528
       },
       {
         "radius_km": 0.4,
-        "count": 3194,
-        "pct": 28.766999909934256
+        "count": 3186,
+        "pct": 28.843020097772946
       },
       {
         "radius_km": 0.5,
-        "count": 3406,
-        "pct": 30.67639376745024
+        "count": 3395,
+        "pct": 30.73510773130545
       },
       {
         "radius_km": 0.6,
-        "count": 3553,
-        "pct": 32.00036026299198
+        "count": 3535,
+        "pct": 32.00253485424588
       },
       {
         "radius_km": 0.7,
-        "count": 3689,
-        "pct": 33.22525443573809
+        "count": 3668,
+        "pct": 33.20659062103929
       },
       {
         "radius_km": 0.8,
-        "count": 3818,
-        "pct": 34.38710258488697
+        "count": 3797,
+        "pct": 34.374434184320116
       },
       {
         "radius_km": 0.9,
-        "count": 3945,
-        "pct": 35.53093758443664
+        "count": 3924,
+        "pct": 35.524171645844646
       },
       {
         "radius_km": 1.0,
-        "count": 4054,
-        "pct": 36.512654237593445
+        "count": 4032,
+        "pct": 36.50190114068441
       },
       {
         "radius_km": 1.1,
-        "count": 4172,
-        "pct": 37.57543006394668
+        "count": 4146,
+        "pct": 37.53394894079305
       },
       {
         "radius_km": 1.2,
-        "count": 4295,
-        "pct": 38.68323876429794
+        "count": 4267,
+        "pct": 38.629368097048705
       },
       {
         "radius_km": 1.3,
-        "count": 4435,
-        "pct": 39.944159236242456
+        "count": 4403,
+        "pct": 39.860583016476554
       },
       {
         "radius_km": 1.4,
-        "count": 4881,
-        "pct": 43.961091596865714
+        "count": 4846,
+        "pct": 43.8710845554952
       },
       {
         "radius_km": 1.5,
-        "count": 11103,
+        "count": 11046,
         "pct": 100.0
       }
     ],
-    "final_100m_entries_pct": 56.03890840313429
+    "final_100m_entries_pct": 56.1289154445048
   }
 }

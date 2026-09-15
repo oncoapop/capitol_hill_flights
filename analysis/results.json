@@ -93,14 +93,19 @@
     "s76_aw139_changepoint": "2026-04-28"
   },
   "section2_3_categorisation": {
-    "unclassifiable_records_count": 409,
+    "unclassifiable_records_count": 459,
     "total_records": 20093,
-    "unclassifiable_fraction": 0.020355347633504207,
+    "unclassifiable_fraction": 0.022843776439556065,
     "unclassifiable_types": [
       "B14A",
+      "BALL",
       "BE23",
       "BE60",
+      "C295",
       "CH70",
+      "CVLT",
+      "GLID",
+      "K35R",
       "MISSING",
       "PA18",
       "PA23",
@@ -115,29 +120,29 @@
     ],
     "vertical_rate_validation": {
       "commercial_arrivals": {
-        "median_fpm": -926.6920397357454,
-        "mean_fpm": -271.22511765132907,
-        "pct_descending": 68.57832779957742,
-        "n": 6626
+        "median_fpm": -930.2880362406994,
+        "mean_fpm": -272.4909288012044,
+        "pct_descending": 68.57359635811837,
+        "n": 6590
       },
       "commercial_high": {
         "median_fpm": 2289.009749091857,
-        "mean_fpm": 2077.92657232504,
-        "pct_climbing": 92.72727272727272,
-        "pct_descending": 6.363636363636363,
-        "n": 110
+        "mean_fpm": 2089.1285815143697,
+        "pct_climbing": 94.11764705882352,
+        "pct_descending": 5.88235294117647,
+        "n": 102
       },
       "business": {
         "median_fpm": 0.0,
-        "mean_fpm": 448.21196347289066,
-        "pct_descending": 43.904958677685954,
-        "n": 968
+        "mean_fpm": 562.2807263874986,
+        "pct_descending": 40.934371523915466,
+        "n": 899
       },
       "light": {
         "median_fpm": 0.0,
-        "mean_fpm": -65.60457876055986,
-        "pct_level_or_desc": 71.30449887093972,
-        "n": 5757
+        "mean_fpm": -76.35677924375918,
+        "pct_level_or_desc": 71.59712722298221,
+        "n": 5848
       }
     }
   },
@@ -150,37 +155,37 @@
     "bootstrap_resamples": 4000,
     "categories": {
       "commercial_arrivals_500m": {
-        "pre_mean": 2.2334384858044163,
-        "post_mean": 15.03125,
-        "rate_ratio": 6.730093573446328,
+        "pre_mean": 2.230283911671924,
+        "post_mean": 14.99609375,
+        "rate_ratio": 6.72384967291372,
         "ci_95_percentile": [
-          5.854855200388897,
-          7.80948655968595
+          5.844617320603513,
+          7.806615481067732
         ],
-        "mann_whitney_u": 71119.5,
-        "p_value": 1.0301659513555606e-54
+        "mann_whitney_u": 71149.0,
+        "p_value": 8.137373362642497e-55
       },
       "commercial_arrivals_1500m": {
-        "pre_mean": 6.574132492113565,
-        "post_mean": 51.71484375,
-        "rate_ratio": 7.8664133727207295,
+        "pre_mean": 6.511041009463723,
+        "post_mean": 51.4609375,
+        "rate_ratio": 7.903642048207364,
         "ci_95_percentile": [
-          7.15412560984629,
-          8.669805153815254
+          7.18072600961227,
+          8.712042367577139
         ],
-        "mann_whitney_u": 80945.0,
-        "p_value": 2.2323743606528513e-93
+        "mann_whitney_u": 80925.0,
+        "p_value": 2.7570366273187796e-93
       },
       "business_private": {
-        "pre_mean": 1.7917981072555205,
-        "post_mean": 4.484375,
-        "rate_ratio": 2.5027233714788735,
+        "pre_mean": 1.722397476340694,
+        "post_mean": 4.23828125,
+        "rate_ratio": 2.4606870993589745,
         "ci_95_percentile": [
-          2.177864876866795,
-          2.880468212501781
+          2.13682820752207,
+          2.83796162597836
         ],
-        "mann_whitney_u": 64427.5,
-        "p_value": 2.145541869642737e-34
+        "mann_whitney_u": 63621.5,
+        "p_value": 2.726302223675376e-32
       },
       "all_aircraft_1500m": {
         "pre_mean": 20.154574132492115,
@@ -194,26 +199,26 @@
         "p_value": 6.086006302733082e-84
       },
       "control_light_fixed_wing_floatplane": {
-        "pre_mean": 8.848580441640378,
-        "post_mean": 7.93359375,
-        "rate_ratio": 0.8965950868983958,
+        "pre_mean": 8.873817034700316,
+        "post_mean": 7.94921875,
+        "rate_ratio": 0.8958060233736224,
         "ci_95_percentile": [
-          0.7815794966012068,
-          1.0283474417674452
+          0.7801577854072795,
+          1.0284129008616651
         ],
-        "mann_whitney_u": 37562.0,
-        "p_value": 0.12551551961356427
+        "mann_whitney_u": 37553.0,
+        "p_value": 0.12439329188155328
       },
       "control_commercial_high": {
-        "pre_mean": 0.49842271293375395,
-        "post_mean": 0.5234375,
-        "rate_ratio": 1.0501878955696202,
+        "pre_mean": 0.4921135646687697,
+        "post_mean": 0.5078125,
+        "rate_ratio": 1.0319010416666667,
         "ci_95_percentile": [
-          0.8041617927158953,
-          1.3719147422771243
+          0.7933897829341316,
+          1.3500900730942236
         ],
-        "mann_whitney_u": 40068.5,
-        "p_value": 0.7612439984536757
+        "mann_whitney_u": 39958.0,
+        "p_value": 0.7113851768985906
       }
     }
   },
@@ -221,57 +226,57 @@
     "summit_elevation_m": 115.0,
     "record_level": {
       "pre": {
-        "n": 695,
-        "alt_median_ft": 7700.0,
+        "n": 694,
+        "alt_median_ft": 7687.5,
         "alt_iqr_ft": [
           6800.0,
           8475.0
         ],
-        "slant_median_km": 2.258313849224682,
+        "slant_median_km": 2.257815885680741,
         "slant_iqr_km": [
-          1.9799098562008646,
-          2.4820822182250724
+          1.979833503936883,
+          2.4826241985995026
         ]
       },
       "post": {
-        "n": 3406,
-        "alt_median_ft": 5325.0,
+        "n": 3395,
+        "alt_median_ft": 5350.0,
         "alt_iqr_ft": [
           4700.0,
           5850.0
         ],
-        "slant_median_km": 1.5224047846285438,
+        "slant_median_km": 1.5233827038535,
         "slant_iqr_km": [
-          1.3343364389988064,
-          1.6794323973184715
+          1.337873608540938,
+          1.679441356223899
         ]
       }
     },
     "pass_level": {
       "pre": {
-        "n": 708,
+        "n": 707,
         "alt_median_ft": 7700.0,
         "alt_iqr_ft": [
           6800.0,
-          8481.25
+          8487.5
         ],
-        "slant_median_km": 2.2629323218114825,
+        "slant_median_km": 2.26275371359766,
         "slant_iqr_km": [
-          1.9809810683298472,
-          2.4867485268633183
+          1.9806748991295073,
+          2.4869160013577414
         ]
       },
       "post": {
-        "n": 3848,
+        "n": 3839,
         "alt_median_ft": 5300.0,
         "alt_iqr_ft": [
           4675.0,
           5850.0
         ],
-        "slant_median_km": 1.5159479634618314,
+        "slant_median_km": 1.5171687327387156,
         "slant_iqr_km": [
-          1.3266956676430226,
-          1.6781573089079185
+          1.3296368687703939,
+          1.6781940917510374
         ]
       }
     }
@@ -287,89 +292,89 @@
     "table": {
       "Commercial arrivals": {
         "Before": {
-          "total": 1957,
+          "total": 1936,
           "counts": {
             "E": 48,
             "W": 46,
             "N": 1518,
-            "S": 180,
-            "Other": 165
+            "S": 179,
+            "Other": 145
           }
         },
         "After": {
-          "total": 11103,
+          "total": 11046,
           "counts": {
-            "E": 3778,
-            "W": 6543,
-            "N": 590,
+            "E": 3754,
+            "W": 6519,
+            "N": 589,
             "S": 9,
-            "Other": 183
+            "Other": 175
           }
         }
       },
       "Business / private": {
         "Before": {
-          "total": 515,
+          "total": 503,
           "counts": {
-            "E": 83,
-            "W": 11,
-            "N": 311,
-            "S": 9,
-            "Other": 101
+            "E": 79,
+            "W": 10,
+            "N": 310,
+            "S": 10,
+            "Other": 94
           }
         },
         "After": {
-          "total": 1028,
+          "total": 992,
           "counts": {
-            "E": 363,
-            "W": 442,
-            "N": 137,
+            "E": 326,
+            "W": 447,
+            "N": 135,
             "S": 2,
-            "Other": 84
+            "Other": 82
           }
         }
       },
       "Control: light/float/heli": {
         "Before": {
-          "total": 2703,
+          "total": 2717,
           "counts": {
-            "E": 1822,
-            "W": 381,
-            "N": 12,
+            "E": 1826,
+            "W": 382,
+            "N": 13,
             "S": 14,
-            "Other": 474
+            "Other": 482
           }
         },
         "After": {
-          "total": 2108,
+          "total": 2178,
           "counts": {
-            "E": 1261,
-            "W": 365,
-            "N": 28,
+            "E": 1315,
+            "W": 371,
+            "N": 32,
             "S": 4,
-            "Other": 450
+            "Other": 456
           }
         }
       },
       "Control: commercial >=10,000 ft": {
         "Before": {
-          "total": 155,
+          "total": 153,
           "counts": {
             "E": 14,
             "W": 36,
             "N": 67,
             "S": 5,
-            "Other": 33
+            "Other": 31
           }
         },
         "After": {
-          "total": 113,
+          "total": 109,
           "counts": {
             "E": 6,
             "W": 58,
-            "N": 27,
+            "N": 26,
             "S": 2,
-            "Other": 20
+            "Other": 17
           }
         }
       }
@@ -378,22 +383,22 @@
   "section2_7_corridor_truncation": {
     "eastbound_corridor": {
       "heading_band": "060-150 deg",
-      "n": 3918,
+      "n": 3892,
       "median_lat": 49.285971,
       "distance_from_summit_km": -0.10329550999992122,
       "median_alt_ft": 5150.0,
       "median_gs_kt": 226.8,
-      "median_cpa_dist_km": 0.17835,
+      "median_cpa_dist_km": 0.1782,
       "lateral_iqr_m": 155.22123999997007
     },
     "westbound_corridor": {
       "heading_band": "240-330 deg",
-      "n": 6554,
+      "n": 6530,
       "median_lat": 49.274002,
       "distance_from_summit_km": -1.4341286199999836,
       "median_alt_ft": 8300.0,
-      "median_gs_kt": 248.3,
-      "median_cpa_dist_km": 1.4709,
+      "median_gs_kt": 248.2,
+      "median_cpa_dist_km": 1.4708,
       "lateral_iqr_m": 56.0397599999326,
       "truncated_by_boundary": true
     },
@@ -401,81 +406,81 @@
       "curve": [
         {
           "radius_km": 0.1,
-          "count": 726,
-          "pct": 6.5387733045122935
+          "count": 728,
+          "pct": 6.590621039290241
         },
         {
           "radius_km": 0.2,
-          "count": 2276,
-          "pct": 20.498964243898047
+          "count": 2270,
+          "pct": 20.550425493391273
         },
         {
           "radius_km": 0.3,
-          "count": 2913,
-          "pct": 26.23615239124561
+          "count": 2909,
+          "pct": 26.335325004526528
         },
         {
           "radius_km": 0.4,
-          "count": 3194,
-          "pct": 28.766999909934256
+          "count": 3186,
+          "pct": 28.843020097772946
         },
         {
           "radius_km": 0.5,
-          "count": 3406,
-          "pct": 30.67639376745024
+          "count": 3395,
+          "pct": 30.73510773130545
         },
         {
           "radius_km": 0.6,
-          "count": 3553,
-          "pct": 32.00036026299198
+          "count": 3535,
+          "pct": 32.00253485424588
         },
         {
           "radius_km": 0.7,
-          "count": 3689,
-          "pct": 33.22525443573809
+          "count": 3668,
+          "pct": 33.20659062103929
         },
         {
           "radius_km": 0.8,
-          "count": 3818,
-          "pct": 34.38710258488697
+          "count": 3797,
+          "pct": 34.374434184320116
         },
         {
           "radius_km": 0.9,
-          "count": 3945,
-          "pct": 35.53093758443664
+          "count": 3924,
+          "pct": 35.524171645844646
         },
         {
           "radius_km": 1.0,
-          "count": 4054,
-          "pct": 36.512654237593445
+          "count": 4032,
+          "pct": 36.50190114068441
         },
         {
           "radius_km": 1.1,
-          "count": 4172,
-          "pct": 37.57543006394668
+          "count": 4146,
+          "pct": 37.53394894079305
         },
         {
           "radius_km": 1.2,
-          "count": 4295,
-          "pct": 38.68323876429794
+          "count": 4267,
+          "pct": 38.629368097048705
         },
         {
           "radius_km": 1.3,
-          "count": 4435,
-          "pct": 39.944159236242456
+          "count": 4403,
+          "pct": 39.860583016476554
         },
         {
           "radius_km": 1.4,
-          "count": 4881,
-          "pct": 43.961091596865714
+          "count": 4846,
+          "pct": 43.8710845554952
         },
         {
           "radius_km": 1.5,
-          "count": 11103,
+          "count": 11046,
           "pct": 100.0
         }
       ],
-      "final_100m_entries_pct": 56.03890840313429
+      "final_100m_entries_pct": 56.1289154445048
     }
   },
   "section2_8_seasonality": {
@@ -484,36 +489,36 @@
     "days_2026": 223,
     "record_level": {
       "commercial_arrivals_1500m": {
-        "rate_2025": 6.2092050209205025,
-        "rate_2026": 42.43497757847533,
-        "rate_ratio": 6.834204610010515
+        "rate_2025": 6.138075313807532,
+        "rate_2026": 42.224215246636774,
+        "rate_ratio": 6.87906437896809
       },
       "commercial_arrivals_500m": {
-        "rate_2025": 2.1841004184100417,
-        "rate_2026": 13.780269058295964,
-        "rate_ratio": 6.309356906001409
+        "rate_2025": 2.1799163179916317,
+        "rate_2026": 13.748878923766815,
+        "rate_ratio": 6.307067299002436
       },
       "control_light_fixed_wing": {
-        "rate_2025": 7.907949790794979,
-        "rate_2026": 7.237668161434978,
-        "rate_ratio": 0.9152395188269628
+        "rate_2025": 7.941422594142259,
+        "rate_2026": 7.246636771300448,
+        "rate_ratio": 0.9125111635093821
       }
     },
     "pass_level": {
       "commercial_arrivals_1500m": {
-        "rate_2025": 6.635983263598327,
-        "rate_2026": 50.73094170403587,
-        "rate_ratio": 7.644826650229869
+        "rate_2025": 6.569037656903766,
+        "rate_2026": 50.511210762331835,
+        "rate_ratio": 7.6892862243294955
       },
       "commercial_arrivals_500m": {
-        "rate_2025": 2.2301255230125525,
-        "rate_2026": 15.614349775784753,
-        "rate_ratio": 7.001556466064832
+        "rate_2025": 2.225941422594142,
+        "rate_2026": 15.591928251121077,
+        "rate_ratio": 7.0046444586803345
       },
       "control_light_fixed_wing": {
-        "rate_2025": 9.410041841004183,
-        "rate_2026": 8.681614349775785,
-        "rate_ratio": 0.9225904088912462
+        "rate_2025": 9.443514644351465,
+        "rate_2026": 8.695067264573991,
+        "rate_ratio": 0.9207448277506353
       }
     }
   },
@@ -558,14 +563,14 @@
     },
     "adsb_capitol_hill": {
       "commercial_arrivals": {
-        "daily_rate_2025": 6.331491712707182,
-        "daily_rate_2026": 37.84431137724551,
-        "ratio": 5.977155636371237
+        "daily_rate_2025": 6.2430939226519335,
+        "daily_rate_2026": 37.634730538922156,
+        "ratio": 6.028217900482222
       },
       "light_fixed_wing_ga": {
-        "daily_rate_2025": 6.906077348066298,
-        "daily_rate_2026": 5.718562874251497,
-        "ratio": 0.8280479041916168
+        "daily_rate_2025": 6.94475138121547,
+        "daily_rate_2026": 5.724550898203593,
+        "ratio": 0.824298896240931
       }
     }
   },

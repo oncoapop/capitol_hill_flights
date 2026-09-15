@@ -9,89 +9,89 @@
   "table": {
     "Commercial arrivals": {
       "Before": {
-        "total": 1957,
+        "total": 1936,
         "counts": {
           "E": 48,
           "W": 46,
           "N": 1518,
-          "S": 180,
-          "Other": 165
+          "S": 179,
+          "Other": 145
         }
       },
       "After": {
-        "total": 11103,
+        "total": 11046,
         "counts": {
-          "E": 3778,
-          "W": 6543,
-          "N": 590,
+          "E": 3754,
+          "W": 6519,
+          "N": 589,
           "S": 9,
-          "Other": 183
+          "Other": 175
         }
       }
     },
     "Business / private": {
       "Before": {
-        "total": 515,
+        "total": 503,
         "counts": {
-          "E": 83,
-          "W": 11,
-          "N": 311,
-          "S": 9,
-          "Other": 101
+          "E": 79,
+          "W": 10,
+          "N": 310,
+          "S": 10,
+          "Other": 94
         }
       },
       "After": {
-        "total": 1028,
+        "total": 992,
         "counts": {
-          "E": 363,
-          "W": 442,
-          "N": 137,
+          "E": 326,
+          "W": 447,
+          "N": 135,
           "S": 2,
-          "Other": 84
+          "Other": 82
         }
       }
     },
     "Control: light/float/heli": {
       "Before": {
-        "total": 2703,
+        "total": 2717,
         "counts": {
-          "E": 1822,
-          "W": 381,
-          "N": 12,
+          "E": 1826,
+          "W": 382,
+          "N": 13,
           "S": 14,
-          "Other": 474
+          "Other": 482
         }
       },
       "After": {
-        "total": 2108,
+        "total": 2178,
         "counts": {
-          "E": 1261,
-          "W": 365,
-          "N": 28,
+          "E": 1315,
+          "W": 371,
+          "N": 32,
           "S": 4,
-          "Other": 450
+          "Other": 456
         }
       }
     },
     "Control: commercial >=10,000 ft": {
       "Before": {
-        "total": 155,
+        "total": 153,
         "counts": {
           "E": 14,
           "W": 36,
           "N": 67,
           "S": 5,
-          "Other": 33
+          "Other": 31
         }
       },
       "After": {
-        "total": 113,
+        "total": 109,
         "counts": {
           "E": 6,
           "W": 58,
-          "N": 27,
+          "N": 26,
           "S": 2,
-          "Other": 20
+          "Other": 17
         }
       }
     }
