@@ -1,6 +1,6 @@
 The Editorial Board
 Journal of Open Aviation Science (JOAS)
-OpenSky Network Association
+TU Delft OPEN Publishing / OpenSky Network Association
 
 15 September 2026
 
@@ -24,17 +24,17 @@ Key Contributions & Findings
    • Internal Negative Controls: Unaffected flight categories (light fixed-wing GA, rate ratio 0.90×, p = 0.12; high-altitude commercial flights ≥10,000 ft, rate ratio 1.03×, p = 0.71) exhibited no increase, refuting receiver-network growth artifacts.
    • Macro External Benchmark: Matched-window validation against official Statistics Canada airport movement counts demonstrated that total YVR airport movements were essentially unchanged (−0.5%), definitively proving that overhead increases represent localized route concentration rather than regional aviation traffic growth.
 
-Alignment with the Journal of Open Aviation Science
-This study embodies the core mission of JOAS:
+Alignment with the Journal of Open Aviation Science & TU Delft OPEN Publishing
+This study directly aligns with the core open-science mission of JOAS:
 • 100% Reproducible Open Science: The entire analysis pipeline, raw record-level datasets, discrete pass extractions, and verification test suites are published openly under MIT and CC BY 4.0 licenses at GitHub: https://github.com/oncoapop/capitol_hill_flights.
 • Methodological Transparency: All statistical assertions are verified against an automated programmatic test suite (verify.py) asserting mathematical and census consistency.
 • Citizen Environmental Surveillance: Demonstrates how open ADS-B telemetry empowers civil society and affected communities to conduct transparent, audit-grade environmental oversight when official monitoring is unavailable.
 
-Declarations & Author Privacy
+Declarations & Compliance Statements
 • Conflict of Interest: In the interest of full scientific transparency, the author declares residency on Capitol Hill, Burnaby, within the study zone. The study was initiated following subjective observations of increased aircraft noise. The author has no financial interests in aviation, airlines, air navigation service providers, or acoustic monitoring companies. The study received no external funding. Public availability of all raw data and code guarantees that all findings are subject to independent replication.
 • Author Privacy & Address: The author is an independent researcher based in Burnaby, British Columbia, Canada. To preserve residential privacy, no physical street address or postal code is included in the manuscript or correspondence.
 • Corresponding Email: damian@oncoapop.com
-• Use of Generative AI: Declared per journal policy (AI tools were utilized for automated script structuring, visualization formatting, and style refinement; all code, calculations, and manuscript text were audited, verified, and approved by the author).
+• Declaration of Generative AI (TU Delft OPEN Publishing / COPE Compliance): In accordance with the policies of TU Delft OPEN Publishing and COPE, generative artificial intelligence and large language model assistants (Google DeepMind Antigravity, Anthropic Claude) were utilized during the preparation of this work to assist in writing/refactoring Python data extraction and statistical analysis scripts, executing algorithmic changepoint routines, formatting tables/figures, and language editing of draft text. Following the use of these tools, the author independently reviewed, executed, and verified all computational code, asserted all statistical figures against authoritative data records, and edited the manuscript. The author assumes full scientific responsibility for the integrity, accuracy, interpretations, and conclusions presented in this publication. AI tools are not credited with authorship.
 • Originality: This manuscript is original, has not been published previously, and is not currently under consideration by any other journal.
 
 Thank you for your time and consideration of our manuscript. I look forward to hearing from you.

@@ -763,12 +763,15 @@ def build_manuscript():
         "Source ADS-B telemetry archives are maintained by the adsb.lol community (https://globe.adsb.lol)."
     ))
 
-    _heading(doc, "Use of Generative AI Statement", level=1)
+    _heading(doc, "Declaration of Generative AI and AI-Assisted Technologies", level=1)
     _body(doc, (
-        "In accordance with the Journal of Open Aviation Science (JOAS) policy on generative artificial intelligence, the author declares that "
-        "large language model agentic coding tools (Antigravity AI Assistant) were utilized to write automated data extraction routines, execute "
-        "algorithmic changepoint and bootstrap scripts, format markdown tables, and assist in manuscript text structuring. All computational "
-        "outputs, statistical assertions, and manuscript drafts were audited, verified against authoritative data files, and approved by the author."
+        "In accordance with the policies of TU Delft OPEN Publishing, the Committee on Publication Ethics (COPE), and the Journal of Open Aviation Science (JOAS), "
+        "the author declares the use of generative artificial intelligence and large language model assistants (Google DeepMind Antigravity, Anthropic Claude) "
+        "during the preparation of this work. Specifically, these tools were used to assist in writing and refactoring Python data extraction and statistical "
+        "analysis routines, executing algorithmic changepoint and bootstrap scripts, formatting tables and figures, and language editing of draft text. "
+        "Following the use of these tools, the author independently reviewed, executed, and verified all computational code, asserted all statistical figures "
+        "against authoritative data records, and edited the manuscript. The author assumes full scientific responsibility for the integrity, accuracy, interpretations, "
+        "and conclusions presented in this publication."
     ))
 
     _heading(doc, "Acknowledgments", level=1)
