@@ -42,8 +42,8 @@ def init_db():
             last_ts REAL,
             min_alt REAL,
             max_alt REAL,
-            is_arrival INTEGER DEFAULT 0,
-            crosses_capitol_hill INTEGER DEFAULT 0,
+            
+            
             num_points INTEGER,
             trajectory_json TEXT NOT NULL
         )""")
@@ -57,7 +57,7 @@ def init_db():
         )""")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_reg_period ON regional_flights(period)")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_reg_date ON regional_flights(date)")
-        conn.execute("CREATE INDEX IF NOT EXISTS idx_reg_is_arr ON regional_flights(is_arrival)")
+        
 
 def get_completed_dates():
     if not DB_PATH.exists(): return set()
@@ -149,7 +149,7 @@ def process_day(date_str: str, release_info: Dict[str, Any]):
                         for seg in segments:
                             min_alt, max_alt = 999999, -999999
                             first_alt, last_alt = None, None
-                            crosses_cap = False
+                            
                             
                             for pt in seg:
                                 alt = pt[2]
@@ -158,8 +158,7 @@ def process_day(date_str: str, release_info: Dict[str, Any]):
                                     last_alt = alt
                                     if alt < min_alt: min_alt = alt
                                     if alt > max_alt: max_alt = alt
-                                if not crosses_cap and haversine_km(pt[0], pt[1], CENTER_LAT, CENTER_LON) <= 1.5:
-                                    crosses_cap = True
+                                
                                     
                             if min_alt == 999999: min_alt = None
                             if max_alt == -999999: max_alt = None
@@ -169,14 +168,14 @@ def process_day(date_str: str, release_info: Dict[str, Any]):
                                 step = max(1, len(seg) // 150)
                                 seg = seg[::step]
                                 
-                            is_arr = 1 if (first_alt is not None and last_alt is not None and min_alt is not None and min_alt < 8000 and (first_alt - last_alt) > 1000) else 0
+                            
                             
                             matched_flights.append({
                                 "period": period, "date": date_str, "icao": data.get("icao", "").upper(),
                                 "callsign": (data.get("flight") or "").strip() or None, "type_code": (data.get("t") or "").strip() or None,
                                 "first_ts": seg[0][4], "last_ts": seg[-1][4],
                                 "min_alt": min_alt, "max_alt": max_alt,
-                                "is_arrival": is_arr, "crosses_capitol_hill": 1 if crosses_cap else 0,
+                                
                                 "num_points": len(seg), "trajectory_json": json.dumps(seg)
                             })
                     except Exception as e:
@@ -188,10 +187,10 @@ def process_day(date_str: str, release_info: Dict[str, Any]):
             conn.executemany("""
             INSERT INTO regional_flights (
                 period, date, icao, callsign, type_code, first_ts, last_ts,
-                min_alt, max_alt, is_arrival, crosses_capitol_hill, num_points, trajectory_json
+                min_alt, max_alt, num_points, trajectory_json
             ) VALUES (
                 :period, :date, :icao, :callsign, :type_code, :first_ts, :last_ts,
-                :min_alt, :max_alt, :is_arrival, :crosses_capitol_hill, :num_points, :trajectory_json
+                :min_alt, :max_alt, :num_points, :trajectory_json
             )
             """, matched_flights)
             conn.execute("""
